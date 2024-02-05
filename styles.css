@@ -1,3 +1,73 @@
+/* organizedpiles
+third bcs project
+26-10-23 */
+
+/* ------ begin boilerplate ------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+html {
+    font-size: 62.5%; /* (62.5/100) * 16px = 10px */
+    -webkit-text-size-adjust: none; /* for iOS Safari */
+    text-size-adjust: none; /* for other mobile browsers */
+}
+p {
+    font-family: 'Times New Roman', Times, serif, 'Times New Roman', Times, serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+          scroll-behavior: smooth;
+    }
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+menu:not(article menu),
+ol:not(article ol),
+ul:not(article ul) {
+    list-style: none;
+}
+
+menu,
+ol,
+ul {
+    padding-left: 0;
+}
+
+article ol,
+article ul {
+    list-style-position: inside;
+}
+
+label,
+button,
+select,
+summary,
+[type=radio],
+[type=submit],
+[type=checkbox] {
+    cursor: pointer;
+}
+
+/* body {
+    overflow: scroll;
+} */
+
+/* ------ end boilerplate ------- */
+
 body {
     display: flex;
     justify-content: center;
@@ -10,6 +80,95 @@ body {
 
 #header-main {
     width: 100%;
-    height: 30vh;
     border: 2px solid red;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-top-left {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-top-left > * {
+    border: 3px solid brown;
+    margin: .5em 1em .5em 1em;
+    padding: 1vh 1vw 1vh 1vw;
+}
+
+.header-top-mid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-countries {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-country {
+    margin: .5em 1em .5em 1em;
+    border: 2px solid orange;
+}
+
+.header-top-right {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-top-right > * {
+    margin: .5em 1em .5em 1em;
+    padding: 1vh 1vw 1vh 1vw;
+}
+
+.header-middle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-middle-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.times-main-logo {
+    font-size: 3em;
+}
+
+.header-middle-right {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-middle-right > * {
+    margin: .5em 1em .5em 1em;
+    padding: 1vh 1vw 1vh 1vw;
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.header-bottom-left {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-bottom-left > * {
+    margin: .25em .5em .25em .5em;
+    padding: .5vh .5vw .5vh .5vw;
+}
+
+.header-bottom-right {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-bottom-right > * {
+    margin: .25em .5em .25em .5em;
+    padding: .5vh .5vw .5vh .5vw;
 }
