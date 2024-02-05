@@ -1,0 +1,15 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    width: 82vw;
+    border: 2px solid green;
+}
+
+#header-main {
+    width: 100%;
+    height: 30vh;
+    border: 2px solid red;
+}
