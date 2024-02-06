@@ -215,3 +215,23 @@ body {
 .large-content-box-bottom > * {
     padding: 10px;
 }
+
+.content-main-right-rail {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-rail-large-container {
+    display: grid;
+    grid-template-rows: 3fr 2fr;
+}
+
+.right-rail-large-headline {
+    display: flex;
+    flex-direction: column;
+}
+
+.small-rr-headline-container {
+    display: flex;
+    justify-content: space-around;
+}
