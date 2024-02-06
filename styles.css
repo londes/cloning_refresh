@@ -172,3 +172,46 @@ body {
     margin: .25em .5em .25em .5em;
     padding: .5vh .5vw .5vh .5vw;
 }
+
+.content-main {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+}
+
+.content-main-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-main-right-rail {
+    display: flex;
+    flex-direction: column;
+}
+
+.large-content-box {
+    display: grid;
+    grid-template-rows: 5fr 1fr;
+}
+
+.large-content-box-top {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.lcb-headlines-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.lcb-headlines-left > * {
+    padding: 10px;
+}
+
+.large-content-box-bottom {
+    display: flex;
+    justify-content: space-around;
+}
+
+.large-content-box-bottom > * {
+    padding: 10px;
+}
